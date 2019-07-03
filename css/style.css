@@ -1,0 +1,110 @@
+/*body{
+  text-decoration: none;
+  padding-bottom: none;
+  line-height:1;
+}*/
+p{
+  margin: 0;
+  padding: 0;
+}
+#background {
+    height: 100vh;
+    max-height: 100%;
+    background: url(../img/picture.jpg) no-repeat center right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mySidenav{
+	z-index:3;
+	width:240px;
+	font-weight:bold; 
+	padding-left: 40px;
+/*	background-color: rgba(220,220,220,0.2); */
+}
+
+#links{
+	position: fixed;
+  	bottom: 16px;
+	padding-left: 50px;
+	z-index: 10;
+}
+
+#photoPage{
+  position: fixed;
+    top: 16px;
+  padding-left: 8px;
+  z-index: 20;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/*About section*/
+#about {
+    height: 100vh;
+    max-height: 100%;
+}
+
+#aboutwords {
+	margin-left:300px; 
+	margin-top:120px;
+}
+
+/*Passion section*/
+
+
+/*words on top of image*/
+.photo { 
+  position: relative;
+  padding-bottom: 16px;
+}
+
+#image{
+  width:100%;
+}
+
+#text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  padding-left: 10px;
+  bottom: 25px;
+}
+
+/*hover effects for words on top*/
+.addwords {
+  position: relative;
+  padding-top: 16px;
+}
+
+.imageDescription {
+  margin-top: 16px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(100, 100, 100, 0.5);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states*/
+  -webkit-transition: visibility opacity 0.2s;
+}
+
+.addwords:hover .imageDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+
