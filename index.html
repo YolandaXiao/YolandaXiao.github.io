@@ -1,236 +1,252 @@
 <!DOCTYPE html>
-<html>
-<title>Yolanda Xiao</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
-<body class="w3-light-grey w3-content" style="max-width:1600px" id="background">
+<html lang="en">
 
-<!-- Sidenav/menu -->
-<nav class="w3-sidenav w3-animate-left w3-collapse " id="mySidenav" style=" background-color: rgba(220,220,220,0.2); "><br>
-  <div style="padding-top: 230px; ">
-    <a href="#" onclick="w3_close()" class="w3-padding">About</a> 
-    <a href="#projects" onclick="w3_close()" class="w3-padding">Projects</a> 
-    <a href="#passion" onclick="w3_close()" class="w3-padding">Passion</a>
-    <a href="#photography" onclick="w3_close()" class="w3-padding">Photography</a>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding w3-hide-large">CLOSE</a>
-  </div>
-</nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16" style="background-color: rgba(230,230,230,0.4);">
-  <a href="javascript:void(0)" class="w3-right w3-btn" onclick="w3_open()" style="color:black; background-color: rgba(230,230,230,0.8);">☰</a>
-</header>
+  <title>Yolanda Xiao</title>
 
-<!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles-->
+  <link href="./css/main.css" rel="stylesheet">
+  <link href="./css/carousel.css" rel="stylesheet">
+</head>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" >
-
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-
-  <!--About section-->
-  <div id="about" class="w3-container">
-    <div id="aboutwords" class="w3-main">
-      <h1><b>Hi, I'm Yolanda Xiao!</b></h1>
-      <p>I'm a first year Computer Science Master student at UCLA.</p>
-      <p>I program.</p>
-      <p>I take pictures.</p>
-    </div>
-  </div>
-
-  <!-- Projects section -->
-  <div class="w3-container" style="background-color: white" id = "projects">
-    <div class="w3-main" style="margin-left:300px; margin-top:40px;">
-      <h1><b>Projects</b></h1>
-      <div class="w3-content w3-justify" style="max-width:1200px">
-
-        <hr class="w3-opacity">
-        <div class="w3-row-padding" style="margin:0 -16px">
-
-          <div class="w3-half">
-            <img src="./img/Aztools.png" class="w3-image w3-padding-16" width="600" height="650">
-          </div>
-          <div class="w3-half">
-            <p style="margin-top: 16px;"><b>NIH BD2K Center of Excellence in Biomedical Computing</b></p>
-            <p><i>Software Developer Intern | Los Angeles</i></p>
-            <p>• Apply machine learning techniques to extract metadata from research papers in PDF format</p>
-            <p>• Use Spring and Restful API to build web interface for PDF input and JSON output</p>
-            <p>• Utilize JSON, javascript and d3 to visualize data and create an easily accessible platform for users</p>
-            <p>- Website link: <a href="http://dev.aztec.io:8092/"><b>http://dev.aztec.io:8092/</b></a></p>
-            <p>- Github link: <a href="https://github.com/YolandaXiao/AZtools"><b>https://github.com/YolandaXiao/AZtools</b></a></p>
-          </div>
-        </div>
-        <div class="w3-row-padding" style="margin:0 -16px">
-
-          <div class="w3-half">
-            <p style="margin-top: 16px;"><b>Bruin Mobile, UCLA Student Media</b></p>
-            <p><i>Android Developer | Los Angeles</i></p>
-            <p>• Use React-native tools to integrate design and map view to build a tours app</p>
-            <p>• Ranked 700+ locations around UCLA based on google search results in python</p>
-            <p>Link: <a href="https://play.google.com/store/apps/details?id=com.uclastudentmedia.UCLAMaps"><b>https://play.google.com/store/apps/details?id=com.uclastudentmedia.UCLAMaps</b></a></p>
-          </div>
-          
-          <div class="w3-half">
-            <img src="./img/UCLA_Tours.png" class="w3-image w3-padding-16" width="600" height="650">
-          </div>
-        </div>
-        <div class="w3-row-padding" style="margin:0 -16px">
-
-          <div class="w3-half">
-            <img src="./img/ASPECT.png" class="w3-image w3-padding-16" width="600" height="650">
-          </div>
-          <div class="w3-half">
-            <p style="margin-top: 16px;"><b>Alberta stroke program early CT score (ASPECT) Automation Project</b></p>
-            <p><i>Researcher | Los Angeles</i></p>
-            <p>I implemented a Matlab program to score CT images automatically using image processing and machine learning techniques. In the process, I applied co-registration on brain images in both 3D and 2D context, and used SVM to classify the brain regions</p>
-          </div>
-        </div>
-        <div class="w3-row-padding" style="margin:0 -16px">
-
-          <div class="w3-half">
-            <p style="margin-top: 16px;"><b>Computer Graphics Lab, National Taiwan University of Science and technology</b></p>
-            <p><i>Research Assistant | Taipei, Taiwan</i></p>
-            <p>I studied the different features of Unity game engine, and designed and implemented platformer and casino games. I also collaborated with graduate students in a lab project to construct a casino game for a client.</p>
-          </div>
-          
-          <div class="w3-half">
-            <img src="./img/slotmachine.png" class="w3-image w3-padding-16" width="600" height="650">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Passion Section -->
-  <div class="w3-container" style="background-color: white" id="passion">
-    <div class="w3-main" style="margin-left:300px; margin-top:40px;">
-      <h1><b>Passion</b></h1>
-      <hr style="width:200px" class="w3-opacity">
-
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-
-        <div class="w3-quarter">
-          <div class="addwords">
-            <img src="./img/Sketch.jpg" style="width:100%;">
-            <p class="imageDescription">Sometimes I put on music and spend hours sketching.</p>
-          </div>   
-          <div class="addwords">
-            <img src="./img/Pixar.jpg" style="width:100%;">
-            <p class="imageDescription">Pixar. Monster’s Inc has been my favorite animation since I was a kid. It gives me hope and warmth.</p>
-          </div>
-          <div class="addwords">
-            <img src="./img/Adventure.jpg" style="width:100%;">
-            <p class="imageDescription">I love new challenges :)</p>
-          </div>        
-        </div>
-
-        <div class="w3-half">
-
-          <div class="addwords">
-            <img src="./img/Museum.jpg" style="width:100%;">
-            <p class="imageDescription">I like Museums. I like impressionism. I often stay in front an artwork for a long time and just stare at it. The first thing I do when I visit a place is to visit its local art museum. An museum represent a city.
-            Places I’ve been to:
-            Los Angeles County Museum of Art
-            Art Institute of Chicago
-            Philadelphia Musuem of Arts
-            Taipei Fine Arts Museum</p>
-          </div>
-
-          <div class="w3-half">
-            <div class="addwords">
-              <img src="./img/Wood.jpg" style="width:100%;  padding-right: 16px; ">
-              <p class="imageDescription" style="margin-right: 16px;">Trying to learn woodwork. A new media for art.</p>
-            </div> 
-          </div> 
-
-          <div class="w3-half">
-            <div class="addwords">
-              <img src="./img/Calligraphy.jpg" style="width:100%; ">
-              <p class="imageDescription">Calligraphy helps me to clear my mind and think.</p>
+<body id="page-top">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <img src="./imgs/Symbol-white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div> 
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <!-- Main -->
+        <div class="card bg-dark text-white">
+            <img src="./imgs/DSC05843.jpg" class="img-fluid" alt="Responsive image">
+            <div class="card-img-overlay d-flex align-items-center container">
+                <div class="container">
+                    <h1>Hi! I'm Yolanda Xiao.</h1>
+                    <a href="https://github.com/YolandaXiao"><img src="./imgs/github.png" style="width:26px;height:26px;"></a>
+                    <a href="https://www.linkedin.com/in/yolandaxiao"><img src="./imgs/linkedin.png" style="width:26px;height:26px;"></a>
+                    <a href="https://www.instagram.com/yolandaxiao7/"><img src="./imgs/instagram.png" style="width:26px;height:26px;"></a>
+                </div>
+            </div>
         </div>
 
-        <div class="w3-quarter">
-          <div class="addwords">
-            <img src="./img/Photography.jpg" style="width:100%; ">
-            <p class="imageDescription">I see photography as my passion for life. I explore this world through photography, I tell stories through photography, I try to understand my life through photography.</p>
-          </div> 
-          <div class="addwords">
-            <img src="./img/Group.jpg" style="width:100%; ">
-            <p class="imageDescription">Seal carving is a traditional form of art in China. I use it as my new media for art. Anchient Chinese art and aesthetics came to me as I explore in seal carving. </p>
-          </div> 
+        
+        <!-- Info Sections -->
+        <div class="container marketing">
+            
+
+            <!-- Projects -->
+            <section id="projects">
+                <div class="container">
+                    <h2 class="featurette-heading font-weight-bold section-title">Projects</h2>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/lowlight.png" class="align-self-start mr-3 project-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Low-light Illumination and Reflectance based Image Enhancement</h5>
+                        <p><a href="./files/Capstone_Project.pdf" class="text-primary">Project Report</a></p>
+                        <p>This project proposes an end-to-end low-light illumination and reflectance based image enhancement network, called LLIR-Net. It is based on the idea of Retinex theory, where an image can be decomposed to illumination and reflectance. Our approach consists of two networks that enhance the illumination and reflectance of an input image respectively. The proposed network outperforms multiple state-of-the-art methods both qualitatively and quantitatively.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/Bokeh.png" class="align-self-start mr-3 project-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Automatic Portrait Segmentation and Synthetic Depth-of-Field </h5>
+                        <p>
+                            <a href="./files/CS269/index.html " class="text-primary">Project Website</a>, 
+                            <a href="./files/CS269ProjectReport.pdf" class="text-primary">Project Report</a>
+                        </p>
+                        <p>In this project, we applied image segmentation on portrait images and added background filtering to achieve automatic “Bokeh” effect. We performed comparison on three image segmentation approaches including 1) active contour models with CNN, 2) level-set active contours, and 3) graph-cut method. A Gaussian filter is applied on the background to produce the final image with synthetic depth-of-field. Our experiments show that the output images are produced with decent bokeh effects.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/Quora.png" class="align-self-start mr-3 project-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Quora Insincere Questions Classification</h5>
+                        <p><a href="./files/CS249_Project_Report.pdf" class="text-primary">Project Report</a></p>
+                        <p>We implemented a fully-connected and a dense neural networks to classify a given question as insincere or not. The models are trained on the Quora Insincere Questions Dataset from Kaggle, and ELMo and BERT embeddings are applied on the sentences to improve the performance. We achieved a 94% accuracy with a F1 score of 0.67.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/EEG.png" class="align-self-start mr-3 project-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Classification on EEG Data using Neural Networks</h5>
+                        <p><a href="./files/EE239_Report.pdf" class="text-primary">Project Report</a></p>
+                        <p>In this project, we used three different architectures to classify EEG data in Keras, including a 1) convolutional neural network (CNN), 2) a recurrent neural network (RNN) and 3) a convolutional recurent neural network (CRNN). AlexNet is used for the convolutional parts, and LSTM and GRU are used for the recurrent parts. All three models achieved a testing accuracy of 67% after fine-tuning.</p>
+                    </div>
+                </div>
+                <hr>
+            
+                <div class="media">
+                    <img src="./imgs/ASPECT.png" class="align-self-start mr-3 project-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Alberta stroke program early CT score (ASPECT) Automation Project</h5>
+                        <p class="mb-0">I implemented a Matlab program to score CT images automatically using image processing and machine learning techniques. In the process, I applied co-registration on brain images in both 3D and 2D context, and used SVM to classify the brain regions.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Experience -->
+            <section id="experience">
+                <div class="container">
+                    <h2 class="featurette-heading font-weight-bold section-title">Experience</h2>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/Adobe.jpeg" class="align-self-start mr-3 experience-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Adobe Systems Inc.</h5>
+                        
+                        <div class="media mt-3">
+                            <img src="./imgs/Scan.png" class="mr-3 experience-icon" alt="...">
+                            <div class="media-body">
+                                <h6 class="mt-0">Software Engineering Intern - Adobe Scan</h6>
+                                <p class="mb-0 font-italic">Jun 2019 – Sep 2019</p>
+                                <p class="mb-0">I developed a tool to evaluate and visualize edge detection algorithms in Android for Adobe Scan. I also worked on perspective correction for image captures using QR codes for calibration with OpenCV.</p>
+                            </div>
+                        </div>
+                        <div class="media mt-3">
+                            <img src="./imgs/fresco.png" class="mr-3 experience-icon" alt="...">
+                            <div class="media-body">
+                                <h6 class="mt-0">Software Developer Intern - Adobe Fresco</h6>
+                                <p class="mb-0 font-italic">Jun 2018 – Sep 2018</p>
+                                <p>I implemented the quick layer selection feature for Adobe Fresco (IOS drawing app) in Objective C and C++. I also focused on improving the app performance through asynchronous programing in C++.</p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/BD2K.png" class="align-self-start mr-3 experience-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">NHLBI Integrated Data Science Training Program in Cardiovascular Medicine (iDISCOVER) @ UCLA</h5>
+                        <h6 class="mt-0">Software Engineering Intern</h6>
+                        <p class="mb-0 font-italic">Jan 2017 - Sep 2017</p>
+                        <p>I used Spring and Restful API for a web interface to extract metadata from research papers in PDF. I also worked on data visualizations in Javascript and d3 to create an easily accessible user platform</p>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Resesarch -->
+            <section id="research">
+                <div class="container">
+                    <h2 class="featurette-heading font-weight-bold section-title">Research</h2>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/VCLA.png" class="align-self-start mr-3 experience-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Center for Vision, Cognition, Learning, and Autonomy at UCLA</h5>
+                        <h6 class="mt-0">Undergraduate Researcher</h6>
+                        <p class="mb-0 font-italic">Sep 2017 – Jun 2019</p>
+                        <p class="mb-0">I worked on two projects in 3D scene understanding from a single RGB image, contributing to two publications listed below. Specifically, I used off-screen Mesa to render 3D models in multiple view angles & compute depth and segmentation maps. I also added physical relationships between objects in scenes in SUNRGBD and SUNCG datasets to our model.</p>
+
+                        <div class="media mt-3">
+                            <img src="./imgs/NIPS.png" class="mr-3 project-icon" alt="...">
+                            <div class="media-body">
+                                <h6 class="mt-0">Cooperative Holistic Scene Understanding: Unifying 3D Object, Layout, and Camera Pose Estimation</h6>
+                                <p class="mb-0 font-weight-light">Siyuan Huang, Siyuan Qi, <b>Yinxue Xiao</b>, Yixin Zhu, Ying Nian Wu, Song-Chun Zhu</p>
+                                <p class="mb-0">Neural Information Processing Systems (NeurIPS) 2018</p>
+                                <p><a href="./files/nips2018cooperative.pdf" class="text-primary">Paper</a></p>
+                            </div>
+                        </div>
+
+                        <div class="media mt-3">
+                            <img src="./imgs/ECCV.png" class="mr-3 project-icon" alt="...">
+                            <div class="media-body">
+                                <h6 class="mt-0">Holistic 3D Scene Parsing and Reconstruction from a Single RGB Image</h6>
+                                <p class="mb-0 font-weight-light">Siyuan Huang, Siyuan Qi, Yixin Zhu, <b>Yinxue Xiao</b>, Yuanlu Xu, Song-Chun Zhu</p>
+                                <p class="mb-0">European Conference on Computer Vision (ECCV) 2018</p>
+                                <p><a href="./files/eccv2018parsing.pdf" class="text-primary">Paper</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="media">
+                    <img src="./imgs/Ozcan.png" class="align-self-start mr-3 experience-icon" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">The Ozcan Research Group at UCLA
+                            </h5>
+                        <h6 class="mt-0">Undergraduate Researcher</h6>
+                        <p class="mb-0 font-italic">Sep 2017 - Jun 2018</p>
+                        <p class="mb-0">I worked on an all-optical diffractive deep neural network, introduced in the paper publication below. Specifically, I fine-tuned the network by optimizing distances between masks, skeletonizing input, optimizing detector positions and increasing the number of detectors present at the sensor. I also worked on a U-Net based network for computational holographic imaging with diffuser modulated sensor measurements.</p>
+
+                        <div class="media mt-3">
+                            <img src="./imgs/D2NN.png" class="mr-3 project-icon" alt="...">
+                            <div class="media-body">
+                                <h6 class="mt-0">All-optical machine learning using diffractive deep neural networks</h6>
+                                <p class="mb-0 font-weight-light">Xing Lin, Yair Rivenson, Nezih T. Yardimci, Muhammed Veli, Yi Luo, Mona Jarrahi, Aydogan Ozcan</p>
+                                <p class="mb-0">Science, 07 Sep 2018, Vol. 361, Issue 6406</p>
+                                <p><a href="./files/science.aat8084.full.pdf" class="text-primary">Paper</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div> 
-      <!-- End photo grid -->
-    </div>
-  </div>
-
-  <!-- Photography section -->
-  <div class="w3-container" style="background-color: white" id="photography">
-    <div class="w3-main" style="margin-left:300px; margin-top:40px;">
-      <h1><b>I want to go</b></h1>
-      <hr style="width:200px" class="w3-opacity">
-      <img src="./img/worldmap2.png" style="width:100%; padding-bottom: 16px;">
-    </div>
-  </div>
-
-<!--   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">-->
-  <div id="photoPage">
-    <a href="/photography/index.html"><img src="./img/Symbol-black.png" style="width:40px;height:40px;margin-top: 10px;margin-left: 20px;"><b>Photography Page ></b></a>
-  </div>
-  <div id="links">
-    <a href="https://www.instagram.com/yolandaxiao7/"><img src="./img/instagram.png" style="width:26px;height:26px;"></a>
-    <a href="https://github.com/YolandaXiao"><img src="./img/Shape.png" style="width:26px;height:26px;"></a>
-    <a href="https://www.linkedin.com/in/yolandaxiao"><img src="./img/linkedin.png" style="width:26px;height:26px;"></a>
-    <img src="./img/email.png" style="width:26px;height:26px;">
-  </div>
 
 
-  <!-- Footer section -->
-  <div class="w3-center" style="background-color: white; padding-top:16px;">
-    <div style="margin-left:240px; background-color: rgb(220,220,220);">
-      <p>Copyright © 2016 Yolanda Xiao. All Rights Reserved.</p>
-    </div>
-  </div>
+        <!-- Footer -->
+        <footer class="container">
+            <hr>
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <a href="https://github.com/YolandaXiao"><img src="./imgs/github_black.png" style="width:26px;height:26px;"></a>
+            <a href="https://www.linkedin.com/in/yolandaxiao"><img src="./imgs/linkedin_black.png" style="width:26px;height:26px;"></a>
+            <a href="https://www.instagram.com/yolandaxiao7/"><img src="./imgs/instagram_black.png" style="width:26px;height:26px;"></a>
+        </footer>
+    </main>
 
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidenav
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-</script>
-
-
-</body>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+</body>    
 </html>
 
 
